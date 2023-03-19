@@ -200,6 +200,7 @@ footer{
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration:none;
 }
 .btn:hover{
     padding:6px 20px;
@@ -210,6 +211,7 @@ footer{
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
+    text-decoration:none;
 }
 .center{
     text-align: center;
