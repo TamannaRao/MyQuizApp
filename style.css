@@ -6,9 +6,7 @@
 html{
     scroll-behavior: smooth;
 }
-:root{
-    --navbar-height:59px;
-}
+
 
 
 #navbar{
@@ -16,16 +14,15 @@ html{
     align-items: center;
     position:relative;
     top:0px;
-    font-weight: bold;
-    height:60px;
+    
 }
 
 #logo{
-    margin: 3px 56px;
+    margin: 4px 56px;
 }
 #logo img{
-        height: 40px;
-        margin: 2px 4px;
+        height: 30px;
+        margin: 3px 4px;
         border-radius: 6px;
 }
 
@@ -48,14 +45,15 @@ html{
     list-style: none;
     font-size: 1.3rem;
 }
- a{
+#navbar ul li  a{
     color:white;
-    background-color: black;
     display: block;
-    padding:3px 22px;
+    padding:3px 15px;
     border-radius: 20px;;
     text-decoration: none;
-    margin:0px 20px;
+    background-color: black;
+    margin:5px;
+
 }
 #navbar ul li a:hover{
     color:black;
@@ -63,14 +61,14 @@ html{
 
 }
 
+
 #home{
     display:flex;
     flex-direction: column;
     padding:3px 200px;
-    height:678px;
+    height:679px;
     justify-content:center;
     align-items: center;
-    color:black;
 }
 #home::before{
     content:"";
@@ -81,31 +79,46 @@ html{
    height:100%;
    width:100%;
    z-index:-1;
-   opacity:0.79;
+   opacity:0.89;
 }
 #home h1{
-    color:rgb(18 13 43);
-    margin:15px;
-    font-size:2.8rem;
+    color:rgb(42, 26, 26);
     text-align:center;
     font-family: 'Bree Serif', serif;
 }
 #home p{
-    color:#1b3614;
+    color:black;
     text-align:center;
     font-size: 1.5rem;
     font-family: 'Bree Serif', serif;
 }
 
 
+#services{
+    margin: 34px;
+    display:flex;
+}
+#services .box{
+    border:2px solid brown;
+    padding:30px;
+    margin: 3px;
+    border-radius:20px;
+    background: #f2f2f2;
+}
+#services .box img{
+    height:160px;
+    display: block;
+    margin:auto;
+}
+#services .box p{
+    font-size: 1rem;
+     font-family: 'Bree Serif', serif;
+}
+
 
 #client-section{
-   height:400px; 
+    
     position: relative;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #client-section::before{
    content: "";
@@ -160,8 +173,6 @@ html{
     font-size: 1.3rem;
     font-family: 'Bree Serif', serif;
 }
-
-
 footer{
     background: black;
     color: white;
@@ -173,35 +184,32 @@ footer{
     font-size: 2.8rem;
     padding:12px; 
     font-family: 'Bree Serif', serif;
-    color:#221273;
 }
 .h-secondary{
-    color:black;
-    font-size: 1.9rem;
+    font-size: 1.1rem;
     padding:12px;
+    text-align:center;
     font-family: 'Bree Serif', serif;
 }
 .btn{
     padding:6px 20px;
     border: 2px solid white;
-    background-color: black;
+    background-color:black;
     color: white;
     margin:17px;
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: bold;
 }
 .btn:hover{
     padding:6px 20px;
     border: 2px solid black;
-    background-color:azure;
-    color:black;
+    background-color: white;
+    color: black;
     margin:17px;
     font-size: 1.5rem;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: bolder;
 }
 .center{
     text-align: center;
