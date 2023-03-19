@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	 <link rel="stylesheet" href="login.css"> 
+	<script type="text/javascript">
+		function validateLogin() {
+			// Get the username and password fields
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+			// Check if the fields are empty
+			if (username == "" || password == "") {
+				alert("Please fill in all fields.");
+				return false;
+			}
+
+			// Check if the username and password are correct
+			if (username == "admin" && password == "password") {
+				alert("Login successful!");
+				return true;
+			} else {
+				alert("Incorrect username or password.");
+				return false;
+			}
+		}
+
+		onkeyup="this.setAttribute('value', this.value);"	
+	</script>
+</head>
+<body>
+  	<div class="box">
+		<h2>Login</h2>	
+	<form>
+		<div class="inputBox">
+			<input type="email" id="username" name="email" value="">
+			<label>Username</label>
+		</div>
+		<div class="inputBox">
+				<input type="text" id="password" name="text" value="">
+				<label>Password</label>
+			</div>
+			<button class="btn"><a href="../teams/teams.html">Login</a></button>
+        	
+		</form>
+
+    </div>
+	
+</body>
+</html>
